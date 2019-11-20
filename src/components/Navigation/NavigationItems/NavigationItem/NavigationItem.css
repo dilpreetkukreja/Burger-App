@@ -1,0 +1,27 @@
+.NavigationItem{
+    width:100%;
+    display:flex;
+    text-align: center;
+    align-items:center; 
+    background-color: rgb(30,85,92);
+    margin-bottom: 10px;
+}
+.NavigationItem a{
+    width:100%;
+    color:inherit;
+    text-decoration: none;
+
+}
+.NavigationItem a:hover, 
+.NavigationItem a:active,
+.NavigationItem a.active{
+    color:rgb(255,210,0);
+}
+
+@media (min-width:500px){
+    .NavigationItem{
+        width:120px;
+        height:100%;
+        margin-bottom: 0px;
+    }
+}

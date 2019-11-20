@@ -1,0 +1,25 @@
+.BuildControl{
+    display: flex;
+    justify-content: center;
+ 
+}
+.BuildControl button, .BuildControl>div{
+    margin-bottom:10px;
+    margin-right:15px;
+}
+.BuildControl button:hover{
+    background-color: rgb(255,210,0);
+    font-weight: bold;
+}
+.BuildControl button:disabled{
+    background-color:#d4d4d4;
+    color: #A1A1A1;
+}
+.BuildControl button:disabled:hover{
+    background-color: #d4d4d4;
+    font-weight: normal;
+}
+.BuildControl>div{
+    width: 60px;
+    text-align:right;
+}
