@@ -84,6 +84,7 @@ class BurgerBuilder extends React.Component{
         console.log('disabledInfo',disabledInfo);
         return (
             <Aux>
+                hello
                 <Modal show={this.state.purchasing}
                     purchaseCancelHandler={this.purchaseCancelHandler}>
                     <OrderSummary 
