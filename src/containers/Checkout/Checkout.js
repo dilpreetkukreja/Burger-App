@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSummary';
-import queryString from 'query-string';
+//import queryString from 'query-string';
 import {Route} from 'react-router-dom';
 import ContactData from './ContactData/ContactData';
 //https://teamtreehouse.com/community/what-is-the-difference-between-path-and-url-in-match-prop-of-reactrouter-route-component-react-router-basics
