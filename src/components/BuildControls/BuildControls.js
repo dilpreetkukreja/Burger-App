@@ -20,7 +20,7 @@ const buildControls = (props) => {
     })
   return (
         <div className={classes.BuildControls}>
-            <div>Current Price: <strong>{props.totalPrice.toFixed(2)}</strong></div>
+            <div>Current (base) Price: <strong>{props.totalPrice.toFixed(2)}</strong></div>
             <p>INGREDIENTS</p>
             {ingredientArr}
             <button className={classes.OrderButton} 

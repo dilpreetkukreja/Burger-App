@@ -10,7 +10,7 @@ const burger = (props) => {
     array1.forEach(item=>console.log("Hi"));//Hi Hi
     array2.forEach(item=>console.log("Hello"));// nothing prints*/
     let transformedIngredients = Object.keys(props.ingredients)
-    .map(igKey => {
+    .map(igKey => {//+ can be added(Array(+props.ingredients[igKey])]),to convert string into number while parsing queryParams in router
         return [...Array(props.ingredients[igKey])].map((_,i)=>{
             return <BurgerIngredients key={igKey+i} type={igKey} />
         })

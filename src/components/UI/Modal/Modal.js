@@ -5,7 +5,7 @@ import Backdrop from '../Backdrop/Backdrop';
 
 class Modal extends React.Component{
     shouldComponentUpdate(nextProps, nextState){
-        return nextProps.show !== this.props.show;
+        return (nextProps.show !== this.props.show || nextProps.children !== this.props.children);
     }
     UNSAFE_componentWillUpdate(){
         console.log('[Modal.js] componentWillUpdate')
@@ -13,7 +13,7 @@ class Modal extends React.Component{
     render(){
         return (
             <Aux>
-                <Backdrop clicked={this.props.purchaseCancelHandler} show={this.props.show}/>
+                <Backdrop clicked={this.props.modalClosed} show={this.props.show}/>
                 <div className = {classes.Modal} 
                     style = {{
                         transform: this.props.show? 'translateY(0)': 'translateY(-100vh)',
