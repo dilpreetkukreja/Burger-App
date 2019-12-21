@@ -4,7 +4,7 @@ import classes from './Order.css';
 const order= (props) => {
     let ingredientArr = [];
     for(let ingredient in props.ingredients){
-        ingredientArr.push(<span style={{border:'1px solid #ccc', margin:'5px', padding:'3px'}}>
+        ingredientArr.push(<span style={{display:'inline-block', border:'1px solid #ccc', margin:'5px', padding:'5px'}}>
                                 {`${ingredient} (${props.ingredients[ingredient]})`}
                           </span>);
     }

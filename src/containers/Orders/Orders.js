@@ -35,7 +35,7 @@ class Orders extends Component {
                     this.state.ordersArray.map(order=>{
                         return <Order key={order.id} ingredients={order.ingredients} totalPrice={order.totalPrice}/>
                     })
-                    :<p>No Orders placed yet!</p> 
+                    :<h3>No Orders placed yet!</h3> 
                 }        
             </div>
         );
