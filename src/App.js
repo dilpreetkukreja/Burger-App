@@ -8,7 +8,7 @@ import Orders from './containers/Orders/Orders';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename='/Burger-App'>
         <Layout>
             <Route path='/' exact component={BurgerBuilder} />
             <Route path='/checkout' component={Checkout} />
